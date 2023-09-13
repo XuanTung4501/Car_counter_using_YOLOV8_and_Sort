@@ -4,8 +4,14 @@ import cv2
 import cvzone
 import math
 from sort import *
+import argparse
 
-cap = cv2.VideoCapture("cars.mp4")
+parser = argparse.ArgumentParser()
+parser.add_argument('--video_path', default="cars.mp4")
+args = parser.parse_args()
+
+
+cap = cv2.VideoCapture(args.video_path)
 
 model = YOLO("yolov8n.pt")
 
