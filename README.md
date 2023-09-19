@@ -13,3 +13,5 @@ pip install -r requirements.txt
 ```
 python Car-Counter.py --video_path=link_to_video 
 ```
+## Result
+![Demo](./result/car_counter.png)
